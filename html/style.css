@@ -1,0 +1,55 @@
+
+.tdFont/*选择器*/{ 
+    /* 
+    括号中见的全是声明，可以由多条 
+    属性的值跟在属性名称加冒号后，用分号结尾。
+    */  
+    color:red;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+table, td{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+p.outCenter{
+    text-align: center;
+}
+
+#floatSample{
+    float:left;
+}
+
+#left{
+    border-style:ridge;
+    border-color:greenyellow;
+    border-width: 5px;
+    
+    width: 46%;
+    float: left;
+
+    padding: 1%;
+}
+
+#right{
+    border-style:ridge;
+    border-color:greenyellow;
+    border-width: 5px;
+
+    width: 46%;
+    float: right;
+
+    padding: 1%;
+
+}
+
+div.sparce{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    padding-bottom: 10px;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    /* class */
+    .center{
+        text-align: center;
+    }
+    .greenFont{
+        color:green;
+    }
+
+    /* id */
+    #idCSS{
+        color:red;
+    }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <title>Html CSS and JavaScript</title>
+  </head>
+  <body>
+
+    <div id="header">
+    <h1 class="center">HTML & CSS & JavaScript</h1>
+    </div>
+
+    <div id="content">
+        <div id="HTMLPart" class="sparce">
+            <h2>1. HTML</h2>
+            <div id="1.1" style="background-color:antiquewhite">
+                <h3> 
+                    1.1
+                    <ul>
+                        <li> 超文本标记语言（Hyper Text Markup Language）</li>
+                        <li>是一种标记语言，不是编程语言。</li>
+                        <li>使用各种<b>标签</b>来描述网页。</li>
+                        <li>使用.html 或者 .htm作为文件后缀。</li>
+                        <li>只有&lt;body&gt; &lt;/body&gt;中间的内容会在网页中显示。</li>
+                        <li>&lt;head&gt;之间的内容会在浏览器的顶部显示。</li>
+                        <p>HTML不受到缩进的严格控制，只以标签的起止作为边界</p><h2>比如这行代码和上面是写在统一行的</h2>
+                    </ul>
+                </h3>
+            </div>
+
+            </br>
+            <div id="CommonLabels", style="background-color:bisque">
+                <h3>
+                    1.2 常见标签
+                    <ul>
+                        <li>&lt;h&gt;&lt;/h&gt;: 标题，包括h1 - h6，显示的文本有大到小。</li>
+                        <!-- 随处可见 --> 
+                        <li><p>&lt;p&gt;&lt;/p&gt;: 段落， 通常用来定义要显示的文本内容。</p></li>
+                        <!-- 本段使用了p --> 
+                        <li>&lt;a href="..."&gt;&lt;/a&gt;: 超链接， href后为超链接地址， 中间的内容为网页显示内容，可以是任何HTML元素。 可以通过<a href="#sample_id">id</a>访问。要在id前加#。</li>
+                        <!-- -->
+                        <li>&lt;img src="..."&gt;: 图片：src后为图片的路径。</li>
+                        <!-- 本地路径线上路径都可以-->
+                        <li>注释格式见源码</li>
+                        <li>&lt;br&gt;: 换<br>行</li>
+                        <li>&lt;b&gt;&lt;/b&gt;: <b>加粗</b></li>
+                        <li>&lt;i&gt;&lt;/i&gt;: <i>斜体</i></li>
+                        <li> &lt;table&gt; &lt;table&gt;: 表格，border属性是表格边框的宽度
+                            <table>  
+                                <tr>
+                                    <td> &lt;tr&gt;&lt;/tr&gt;</td>
+                                    <td>行</td>
+                                </tr>
+                                <tr>
+                                    <td> &lt;td&gt;&lt;/td&gt;</td>
+                                    <td>列</td>
+                                </tr>
+                            </table></li>
+                        <li>列表
+                            <ol><li>&lt;ol&gt;&lt;/ol&gt;: 有序列表</li></ol>
+                            <ul><li>&lt;ul&gt;&lt;/ul&gt;: 无序列表</li>
+                                <li>&lt;li&gt;&lt;/li&gt;: 列表项</li>
+                            </ul>
+                        </li>
+                        <li>&lt;hr&gt;: 显示一条水平线<hr><br></li> <!--显示一条水平线-->
+                        <li>常见转义字符<br>
+                            <table>
+                                <tr>
+                                    <td>显示</td>
+                                    <td>字符</td>
+                                </tr>
+                                <tr>
+                                    <td><</td>
+                                    <td>&amplt;</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>&ampgt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&</td>
+                                    <td>&ampamp;</td>
+                                </tr>
+                                <tr>
+                                    <td>"</td>
+                                    <td>&ampquot;</td>
+                                </tr>
+                            </table></li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+        <hr>
+        <div id="CSSPart" class="saprce">
+            <h2>2. CSS</h2>
+            <div id="cssSummary">
+                <h3>2.1 简介</h3>
+                <p>CSS 的使用提高了代码的复用性，有点像编程语言中的类，一次定义重复使用。</p>
+                <ul>
+                    <li>CSS指层叠样式表（CascadingStyle Sheets）。</li>
+                    <li>样式定义了如何显示HTML元素。</li>
+                    <li>样式表用来存储样式。</li>
+                    <li>CSS 由选择器和声明构成。</li> <!-- 详见style.css文件-->
+                    <li>多个标签可以同时定义样式。</li>
+                    <li>一个标签样式可以被定义多次。</li> <!-- 详情见style.css 文件-->
+                    <li>语法格式参见css文件。</li>
+                </ul>
+            </div>
+            <div id="floatSample">
+                <div id="left">
+                    <h3>2.2 创建CSS</h3>
+                    <ul>
+                        <li>HTML通过id或者class设置选择器。</li>
+                        <li id="idCSS">这行是通过id设置的CSS。id的定义方式为#加名字，调用时去掉#。</li>
+                        <li class="greenFont">这行是通过class设置的CSS。class的定义方式为.加名字，使用时去掉.</li> <!--具体使用参见顶部代码-->
+                        <li>插入样式表
+                            <table>
+                                <tr>
+                                    <td>外部样式表</td>
+                                    <td class="tdFont">当这个css要应用到很多HTML文件时使用，每个html在&lt;head&gt;中使用&lt;link&gt;链接到样式表文件。</td>
+                                        <!-- 这行使用了外部样式表的class方式 -->
+                                </tr>
+                                <tr>
+                                    <td>内部样式表</td>
+                                    <td class="greenFont">单个HTML文件内部需要特殊的样式时使用，定义在头文件的&lt;style&gt;&lt;/style&gt;之间</td> <!--具体使用参见顶部代码-->
+                                </tr>
+                                <tr>
+                                    <td>内联样式表</td>
+                                    <td style="color:coral">直接写在标签的属性中。</td>
+                                </tr>
+                            </table></li>
+                        <li>可以使用标签.类名来实现特定标签使用该类。</li>
+                            <ol>
+                                <li><p class="outCenter">这行会变</p></li>
+                                <li><h6 class="outCenter">这行不会</h6></li>
+                            </ol>
+                    </ul>
+                </div>
+                <div id="right">2.3 盒子模型
+                    所有的HTML标签都可以看作盒子模型。而CSS的盒子模型通常指&lt;div&gt;，用来限制区域，封装范围内的其他HTML标签。
+                    <ul>常用属性：
+                        <li><table>
+                            <tr>
+                                <td>Margin</td>
+                                <td>外边距， 和其他Box或者屏幕边界的距离。透明。</td>
+                            </tr>
+                            <tr>
+                                <td>Border</td>
+                                <td>边框，可视的边框。</td>
+                            </tr>
+                            <tr>
+                                <td>Padding</td>
+                                <td>Box的border和Box中内容之间的距离。</td>
+                            </tr>
+                        </table></li>
+                        <li>以上三种间距可以使用像素（px）作为单位 也可以使用百分比。</li>
+                        <li>float标签用来实现多列显示。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="javascriptPart" class="sparce">
+            <h2>3. JavaScript</h2>
+            <div id="jspSummary">
+                <h3>3.1 简介</h3>
+                <p>JavaScript是网页编程语言，控制了网页的行为。</p>
+                <ul>
+                    <li>HTML中的脚本必须位于&lt;script&gt;&lt;/script&gt;之间。可以放在head和body中，但是通常放在head中。</li>
+                    <li>也可以把需要重复使用的脚本放在外部， 并在&lt;script&gt;的src属性中声明地址。外部的脚本不能包含script标签。</li>
+                    <li><button type="button" onclick="sampleCode()">Show Sample Code</button></li>
+                    <p id="demo">这里</p>
+                </ul>
+            </div>
+            <div>
+                <h3>3.2 语法</h3>
+                <ul>
+                    <li>字面量（常量
+                        <table>
+                            <tr>
+                                <td>Number</td>
+                                <td>整数，小数， 科学计数</td>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>可以使用单引号或者双引号</td>
+                            </tr>
+                            <tr>
+                                <td>表达式</td>
+                                <td>用于计算，比如10*5 = <p id="calDemo"></p></td>
+                                <script>document.getElementById("calDemo").innerHTML = 5*10;</script> <!-- 注意脚本的位置。-->
+                            </tr>
+                            <tr>
+                                <td>数组</td>
+                                <td>Python list</td>
+                            </tr>
+                            <tr>
+                                <td>对象</td>
+                                <td>Python dict，访问值的方式参考DataFrame访问col值的两种方式。并且一个函数可以作为值。</td>
+                            </tr>
+                        </table></li>
+                    <li>变量： 使用var定义。例如 var demoVariable, var2定义了两个变量。</li>
+                    <li>运算符基本和Python一致。</li>
+                    <li>可以使用分号来分割语句，也可以不使用。</li>
+                    <li>脚本语言的定义顺序需要注意。</li>
+                    <li>条件判断，循环的语法参考Java。</li>
+                    <li>函数：<p id="funcDefine"></p>
+                        <script>document.getElementById("funcDefine").innerHTML="详见.js文件"</script></li>
+                    <li>函数参数： 调用未定义的参数时会有默认值undefined</li>
+                    <li>在网页中显示脚本的返回值需要通过定义变量来传递，无法直接显示return值。</li>
+                </ul>
+            </div>
+            <p>基本能看懂就能知道功能是什么，函数名都比较浅显易懂。</p>
+        </div>
+    </div>
+    <a id="sample_id"> 超链接ID跳转地址。</a>
+
+  </body>
+</html>
